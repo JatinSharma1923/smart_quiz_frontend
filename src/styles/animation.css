@@ -1,0 +1,26 @@
+/* Custom animation and scroll styles for HeroSection and other animated components */
+
+/* Example: Keyframes for floating, fade, or custom effects */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.float-animate {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Example: For GSAP/ScrollTrigger, you can add classes for pinning, sticky, or reveal effects if needed */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add more custom animation classes as needed */
